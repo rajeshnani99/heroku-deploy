@@ -1,0 +1,17 @@
+{
+  "name": "heroku-depoly",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+   "start":"node index.js",
+   "build": "grunt dist",
+    "postinstall": "./node_modules/bower/bin/bower install && npm run build"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.1",
+    "nodemon": "^2.0.19"
+  }
+}
